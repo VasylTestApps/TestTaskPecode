@@ -53,6 +53,7 @@ public class MainActivity extends FragmentActivity implements MyFragment.MyFragm
                 return POSITION_NONE;
             }
         };
+        mViewPager.setOffscreenPageLimit(5);
         mViewPager.setAdapter(mFragmentStatePagerAdapter);
         mViewPager.setCurrentItem(mFragmentList.size()-1);
     }
